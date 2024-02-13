@@ -24,6 +24,7 @@ repositories {
 
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	compileOnly 'org.projectlombok:lombok'
 	annotationProcessor 'org.projectlombok:lombok'
 //	providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat'
@@ -35,7 +36,10 @@ dependencies {
 	implementation 'org.glassfish.web:jakarta.servlet.jsp.jstl' //스프링부트 3.0 이상
 	//JSP 추가 끝
 
-	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	//타임리프
+	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+
+
 }
 
 tasks.named('test') {
